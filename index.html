@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cludo Test</title>
+    <link rel="shortcut icon" href="./img/cludo-logo.png">
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/searchbox.css"/>
+ </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="main-title">Cludo Search Bar</h1>
+                <!-- SEARCH BOX -->
+                <div class="search-box">
+                    <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="Postal code..." id="search" autocomplete="off">
+                    </form>
+                    <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+                        xml:space="preserve">
+                        <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+                        <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+                    </svg>
+                    <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <!-- FILTERS SECTION -->
+                <div class="search-filters">
+                    <h2>Filters</h2>
+                    <div class="filters-container">
+                        <div class="filter-box">
+                            <label for="standard-select">Type</label>
+                            <div class="select">
+                                <select id="standard-select">
+                                    <option value="Option 1">All</option>
+                                    <option value="Option 1">Apartment</option>
+                                    <option value="Option 2">House</option>
+                                    <option value="Option 3">Room</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-box">
+                            <label>Rental Period</label>
+                            <div class="select">
+                                <select id="standard-select">
+                                    <option value="Option 1">All</option>
+                                    <option value="Option 1">1-11 months</option>
+                                    <option value="Option 2">1-2 years</option>
+                                    <option value="Option 3">>2 years</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-box">
+                            <label>Max. Price</label>
+                            <div class="range-wrap">
+                                <div class="range-value" id="rangeV"></div>
+                                <input id="range" type="range" min="8000" max="25000" value="25000" step="100">
+                            </div>
+                        </div>
+                        <div class="filter-box">
+                            <label>Min. Rooms</label>
+                            <div class="select">
+                                <select id="standard-select">
+                                    <option value="Option 1">All</option>
+                                    <option value="Option 1">1 room</option>
+                                    <option value="Option 2">2 rooms</option>
+                                    <option value="Option 3">3 rooms</option>
+                                    <option value="Option 3">4+ rooms</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BANNER SECTION -->
+                <div class="search-banner rounded">
+                    <div class="banner-main">
+                        <img src="./img/YouSee-logo.jpg" width="110px" height="60px" alt="logo-banner"></img>
+                        <div class="banner-main-text">
+                            <h1 class="banner-title text-black">Don't found what you're looking for?</h1>
+                            <p class="banner-subtitle text-black">More products available in our online store</p>
+                        </div>
+                    </div>
+                    <a class="banner-link" href="index.html" ><span class="text-black">Check our Store!</span></a>
+                </div>
+                <!-- SEARCH RESULTS SECTION -->
+                <div class="search-results">
+                    <h4 class="results-found">9 results found</h4>
+                    <ul class="results-list rounded">
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment1.jpg" alt="apart1"></img>
+                            <div class="results-item-body">
+                                <h1>J. M. THIELES VEJ 19</h1>
+                                <p>Zip code 1961</p>
+                                <p>Available from 15/06/21</p>
+                                <p class="size-price"><span>72 m²</span><span>-</span><span>11800 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment2.jpg" alt="apart2"></img>
+                            <div class="results-item-body">
+                                <h1>FREDERIKSSUNDSVEJ 76</h1>
+                                <p>Zip code 2700</p>
+                                <p>Available from 01/06/21</p>
+                                <p class="size-price"><span>47 m²</span><span>-</span><span>7500 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment3.jpg" alt="apart3"></img>
+                            <div class="results-item-body">
+                                <h1>JYLLINGEVEJ 102</h1>
+                                <p>Zip code 2500</p>
+                                <p>Available from 01/06/21</p>
+                                <p class="size-price"><span>82 m²</span><span>-</span><span>13000 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment4.jpg" alt="apart4"></img>
+                            <div class="results-item-body">
+                                <h1>GAMMEL JERNBANEVEJ 4</h1>
+                                <p>Zip code 1961</p>
+                                <p>Available from 15/06/21</p>
+                                <p class="size-price"><span>72 m²</span><span>-</span><span>11800 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment5.jpg" alt="apart5"></img>
+                            <div class="results-item-body">
+                                <h1>VODROFFSVEJ 23</h1>
+                                <p>Zip code 1900</p>
+                                <p>Available from 15/05/21</p>
+                                <p class="size-price"><span>115 m²</span><span>-</span><span>14700 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment6.jpg" alt="apart6"></img>
+                            <div class="results-item-body">
+                                <h1>ØSTERBROGADE 203</h1>
+                                <p>Zip code 2100</p>
+                                <p>Available from 01/06/21</p>
+                                <p class="size-price"><span>183 m²</span><span>-</span><span>25500 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment7.jpg" alt="apart7"></img>
+                            <div class="results-item-body">
+                                <h1>WILLEMOESGADE 45</h1>
+                                <p>Zip code 2100</p>
+                                <p>Available from 01/06/21</p>
+                                <p class="size-price"><span>94 m²</span><span>-</span><span>14500 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment8.jpg" alt="apart8"></img>
+                            <div class="results-item-body">
+                                <h1>J. M. THIELES VEJ 19</h1>
+                                <p>Zip code 2500</p>
+                                <p>Available from 01/05/21</p>
+                                <p class="size-price"><span>98 m²</span><span>-</span><span>16000 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                        <li class="results-item">
+                            <img src="./img/apartments/apartment1.jpg" alt="apart1"></img>
+                            <div class="results-item-body">
+                                <h1>J. M. THIELES VEJ 19</h1>
+                                <p>Zip code 1961</p>
+                                <p>Available from 15/06/21</p>
+                                <p class="size-price"><span>72 m²</span><span>-</span><span>11800 DKK / per. month</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
